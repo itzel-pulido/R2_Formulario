@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de la persona Usuaria</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <main class="contenedor-principal">
+        <section class="tarjeta-formulario">
+
+            <header class="encabezado-formulario">
+                <p class="etiqueta-superior">CREA TU PERFIL</p>
+                <h1 id="titulo-formulario">Registro de la persona usuaria</h1>
+                <p class="introduccion">
+                    Completa tus datos personales y comparte tus intereses para conocerte mejor.
+                </p>
+            </header>
+
+            <form action="#" method="post">
+
+                <fieldset class="grupo-campos">
+                    <legend>Datos personales</legend>
+
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre"
+                               placeholder="Escribe tu nombre(s)" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido"
+                               placeholder="Escribe tu apellido" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo"
+                               placeholder="nombre@ejemplo.com" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="contrasena">Contraseña:</label>
+                        <input type="password" id="contrasena" name="contrasena"
+                               placeholder="Crea una contraseña" required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="grupo-campos">
+                    <legend>Sobre ti</legend>
+
+                    <div class="campo">
+                        <label for="descripcion">Cuéntanos un poco sobre ti:</label>
+                        <textarea id="descripcion" name="descripcion"
+                                  rows="4" maxlength="300"
+                                  placeholder="Escribe una breve descripción sobre ti."></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset class="grupo-campos">
+                    <legend>Mis intereses</legend>
+
+                    <p class="texto-ayuda">
+                        Selecciona los temas que más te interesan.
+                        Puedes elegir varias opciones.
+                    </p>
+
+                    <div class="lista-intereses">
+                        <div class="opcion-interes">
+                            <input type="checkbox" id="tecnologia" name="intereses" value="Tecnología">
+                            <label for="tecnologia">Tecnología</label>
+                        </div>
+
+                        <div class="opcion-interes">
+                            <input type="checkbox" id="arte" name="intereses" value="Arte">
+                            <label for="arte">Arte</label>
+                        </div>
+
+                        <div class="opcion-interes">
+                            <input type="checkbox" id="deporte" name="intereses" value="Deporte">
+                            <label for="deporte">Deporte</label>
+                        </div>
+
+                        <div class="opcion-interes">
+                            <input type="checkbox" id="programacion" name="intereses" value="Programación">
+                            <label for="programacion">Programación</label>
+                        </div>
+
+                        <div class="opcion-interes">
+                            <input type="checkbox" id="inteligencia-artificial" name="intereses" value="Inteligencia artificial">
+                            <label for="inteligencia-artificial">Inteligencia artificial</label>
+                        </div>
+
+                        <div class="opcion-interes">
+                            <input type="checkbox" id="musica" name="intereses" value="Música">
+                            <label for="musica">Música</label>
+                        </div>
+
+                        <div class="opcion-interes">
+                            <input type="checkbox" id="lectura" name="intereses" value="Lectura">
+                            <label for="lectura">Lectura</label>
+                        </div>
+
+                        <div class="opcion-interes">
+                            <input type="checkbox" id="cine" name="intereses" value="Cine">
+                            <label for="cine">Cine</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="acciones-formulario">
+                    <button type="submit" class="boton-registro">
+                        Registrarse
+                    </button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
