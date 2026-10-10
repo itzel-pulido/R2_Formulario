@@ -1,0 +1,219 @@
+
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 30px 15px;
+    background-color: #EBEFE0;
+    color: #263342;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Tarjeta del formulario */
+.contenedor-principal {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.tarjeta-formulario {
+    padding: 35px;
+    background-color: #FFFFFF;
+    border: 1px solid #D9E0D1;
+    border-radius: 18px;
+}
+
+/* Encabezado */
+.etiqueta-superior {
+    display: inline-block;
+    padding: 7px 12px;
+    margin-bottom: 12px;
+    background-color: #EBEFE0;
+    border-left: 3px solid #DD88C1;
+    color: #263342;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 0;
+    color: #263342;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    line-height: 1.15;
+}
+
+.introduccion {
+    margin-top: 12px;
+    color: #526052;
+}
+
+/* Secciones */
+
+fieldset {
+    margin: 0;
+    padding: 18px 0;
+    border: none;
+    border-bottom: 1px solid #D9E0D1;
+}
+
+legend {
+    padding: 0;
+    margin-bottom: 12px;
+    color: #263342;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/* Campos personales */
+.grupo-campos {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.campo {
+    margin-bottom: 14px;
+}
+
+.campo:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 11px 13px;
+    border: 1px solid #D9E0D1;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    color: #263342;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #626B66;
+}
+
+/* Intereses */
+.texto-ayuda {
+    margin-bottom: 12px;
+    color: #526052;
+}
+
+.lista-intereses {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9px 12px;
+}
+
+.opcion-interes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border: 1px solid #D9E0D1;
+    border-radius: 9px;
+    background-color: #FAFBF7;
+}
+
+.opcion-interes label {
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.opcion-interes input {
+    accent-color: #407ADD;
+    cursor: pointer;
+}
+
+/* Botón de registro */
+.acciones-formulario {
+    padding-top: 20px;
+}
+
+.boton-registro {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background-color: #407ADD;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Selector de ID */
+#titulo-formulario {
+    max-width: 700px;
+}
+
+/* Estados de interacción */
+input:focus,
+textarea:focus {
+    outline: 2px solid #407ADD;
+    outline-offset: 2px;
+}
+
+.boton-registro:hover {
+    background-color: #DD88C1;
+    color: #263342;
+}
+
+.opcion-interes:has(input:checked) {
+    background-color: #EBEFE0;
+    border-color: #89BC62;
+}
+
+/* Diseño celulares */
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .tarjeta-formulario {
+        padding: 22px 18px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .lista-intereses {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ajustes */
+legend {
+    padding: 0;
+    margin-bottom: 5px;
+    color: #263342;
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.grupo-campos {
+    padding-top: 10px;
+    padding-bottom: 18px;
+}
